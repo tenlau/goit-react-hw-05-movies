@@ -1,6 +1,15 @@
-/* src/App.module.css */
-.container {
+.App {
+  text-align: center;
   padding: 20px;
-  background-color: #f0f2f5;
-  min-height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 30px;
+  margin-bottom: 10px;
 }

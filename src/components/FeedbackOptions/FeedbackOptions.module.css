@@ -1,0 +1,18 @@
+.feedbackOptions {
+  margin: 20px 0;
+}
+
+.feedbackButton {
+  padding: 10px 20px;
+  margin: 0 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.feedbackButton:hover {
+  background-color: #0056b3;
+}

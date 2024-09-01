@@ -1,39 +1,23 @@
-// src/components/Statistics/Statistics.jsx
 import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './Statistics.module.css';
-import randomColor from '../../utils/randomColor'; // Utility to generate random colors
 
-const Statistics = ({ title, stats }) => {
-  return (
-    <section className={styles.statistics}>
-      {title && <h2 className={styles.title}>{title}</h2>}
-
-      <ul className={styles.statList}>
-        {stats.map(({ id, label, percentage }) => (
-          <li
-            key={id}
-            className={styles.item}
-            style={{ backgroundColor: randomColor() }}
-          >
-            <span className={styles.label}>{label}</span>
-            <span className={styles.percentage}>{percentage}%</span>
-          </li>
-        ))}
-      </ul>
-    </section>
-  );
-};
+const Statistics = ({ good, neutral, bad, total, positivePercentage }) => (
+  <div className={styles.statistics}>
+    <p>Good: {good}</p>
+    <p>Neutral: {neutral}</p>
+    <p>Bad: {bad}</p>
+    <p>Total: {total}</p>
+    <p>Positive feedback: {positivePercentage}%</p>
+  </div>
+);
 
 Statistics.propTypes = {
-  title: PropTypes.string,
-  stats: PropTypes.arrayOf(
-    PropTypes.shape({
-      id: PropTypes.string.isRequired,
-      label: PropTypes.string.isRequired,
-      percentage: PropTypes.number.isRequired,
-    })
-  ).isRequired,
+  good: PropTypes.number.isRequired,
+  neutral: PropTypes.number.isRequired,
+  bad: PropTypes.number.isRequired,
+  total: PropTypes.number.isRequired,
+  positivePercentage: PropTypes.number.isRequired,
 };
 
 export default Statistics;
