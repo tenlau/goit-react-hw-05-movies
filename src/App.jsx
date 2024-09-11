@@ -4,7 +4,7 @@ import Statistics from './components/Statistics/Statistics.jsx';
 import Section from './components/Section/Section.jsx';
 import Notification from './components/Notification/Notification.jsx';
 import './App.module.css';
-
+ 
 const App = () => {
   const [good, setGood] = useState(0);
   const [neutral, setNeutral] = useState(0);
