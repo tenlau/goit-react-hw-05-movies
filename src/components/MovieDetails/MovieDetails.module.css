@@ -1,0 +1,131 @@
+/* MovieDetails.module.css */
+
+.container {
+    padding: 20px;
+}
+
+.navLinks {
+    margin-bottom: 10px;
+    /* Adjust spacing for Home and Movies */
+}
+
+.navLink {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 1.2rem;
+}
+
+.navLink:hover {
+    color: #0056b3;
+}
+
+.topLine,
+.bottomLine {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 20px 0;
+}
+
+.goBackWrapper {
+    margin-bottom: 20px;
+}
+
+.goBackButton {
+    background: none;
+    border: none;
+    color: #007bff;
+    cursor: pointer;
+    font-size: 1.2rem;
+    display: inline-flex;
+    align-items: center;
+}
+
+.goBackButton:hover {
+    color: #0056b3;
+}
+
+.arrow {
+    margin-right: 5px;
+    font-size: 1.5rem;
+}
+
+.movieDetails {
+    display: flex;
+    margin-top: 20px;
+}
+
+.moviePoster {
+    width: 300px;
+    height: auto;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+
+.movieInfo {
+    max-width: 600px;
+}
+
+.title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.userScore {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #28a745;
+    margin-bottom: 10px;
+}
+
+.sectionTitle {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 20px;
+    /* Add space above section titles */
+    margin-bottom: 5px;
+    /* Add space below section titles */
+    color: #333;
+}
+
+.overview {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.genres {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.additionalInfo {
+    margin-top: 30px;
+}
+
+.additionalInfo h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.infoList {
+    list-style-type: disc;
+    /* Adds black dots before list items */
+    padding-left: 20px;
+    /* Indent the list a little */
+}
+
+.infoList li {
+    margin-bottom: 10px;
+}
+
+.link {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.link:hover {
+    color: #0056b3;
+}

@@ -1,0 +1,39 @@
+/* Cast.module.css */
+.container {
+    padding: 20px;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.castList {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.castItem {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.castImage {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.castName {
+    font-size: 1.2rem;
+    color: #007bff;
+}
+
+.castCharacter {
+    font-size: 1rem;
+    color: #555;
+}
